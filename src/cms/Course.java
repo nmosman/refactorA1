@@ -10,12 +10,7 @@ public class Course {
 		
 		private String instructor;
 		
-		private Date courseCreated; 
-		private Date startDate;
-		private Date endDate; 
-		
-		private int class_size_max;
-		private int num_of_instructors;
+	
 		
 		private float courseCost; 
 		private String courseDescription;
@@ -66,45 +61,7 @@ public class Course {
 		{
 			this.instructor = instructor;
 		}
-		public Date getCourseCreated() {
-			return courseCreated;
-		}
 
-		public void setCourseCreated(Date courseCreated) {
-			this.courseCreated = courseCreated;
-		}
-
-		public Date getStartDate() {
-			return startDate;
-		}
-
-		public void setStartDate(Date startDate) {
-			this.startDate = startDate;
-		}
-
-		public Date getEndDate() {
-			return endDate;
-		}
-
-		public void setEndDate(Date endDate) {
-			this.endDate = endDate;
-		}
-
-		public int getClass_size_max() {
-			return class_size_max;
-		}
-
-		public void setClass_size_max(int class_size_max) {
-			this.class_size_max = class_size_max;
-		}
-
-		public int getNum_of_instructors() {
-			return num_of_instructors;
-		}
-
-		public void setNum_of_instructors(int num_of_instructors) {
-			this.num_of_instructors = num_of_instructors;
-		}
 
 		public float getCourseCost() {
 			return courseCost;
