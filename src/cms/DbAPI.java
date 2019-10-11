@@ -39,13 +39,13 @@ public class DbAPI {
 		for(int i = 0; i < 5; i++)
 		{
 			Student s = new Student("Student-" + i, "10000" + i);
-			System.out.println(s);
+			//System.out.println(s);
 			
 			StudentCache.add(s);
 			
 			Teacher t = new Teacher("Teacher-" + i, "10000" + i);
 			TeacherCache.add(t);
-			System.out.println(t);
+			//System.out.println(t);
 			
 		}
 		
@@ -104,6 +104,8 @@ public class DbAPI {
 	{
 		for (Student s : StudentCache)
 		{
+			System.out.println(s.getUsername());
+			
 			if(s.getUsername().equals(username))
 			{
 				return s.getSchedule();

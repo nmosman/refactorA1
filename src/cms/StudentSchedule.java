@@ -5,6 +5,10 @@ import java.util.ArrayList;
 public class StudentSchedule {
 	private ArrayList<Course> courseList = new ArrayList<Course>();
 	
+	public StudentSchedule()
+	{
+		
+	}
 	public void printSchedule()
 	{
 		for (Course c : courseList)

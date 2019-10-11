@@ -9,16 +9,16 @@ public class Student extends User{
 	
 	public Student(String name, String studentId)
 	{
-		name = name;
-		studentId = studentId;
+		this.name = name;
+		this.studentId = studentId;
 		username = name + studentId;
 	}
 	
 	public Student(String username, String name, String studentId)
 	{
-		username = username;
-		name = name;
-		studentId = studentId;
+		this.username = username;
+		this.name = name;
+		this.studentId = studentId;
 	}
 	public void joinCourse(String joinCode)
 	{
