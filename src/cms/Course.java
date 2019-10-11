@@ -8,6 +8,8 @@ public class Course {
 		private String course_id;
 		private ArrayList<String> instructors;
 		
+		private String instructor;
+		
 		private Date courseCreated; 
 		private Date startDate;
 		private Date endDate; 
@@ -20,12 +22,12 @@ public class Course {
 		
 		private ArrayList<Student> studentList = new ArrayList<Student>();
 				
-		
-		public Course(String name, String course_id)
+		public Course(String name, String courseId)
 		{
-			name = name;
-			course_id = course_id;
+			this.name = name;
+			this.course_id = courseId;
 		}
+		
 		public String courseInfo()
 		{
 			return name + " " + course_id;
@@ -54,7 +56,16 @@ public class Course {
 		public void setInstructors(ArrayList<String> instructors) {
 			this.instructors = instructors;
 		}
-
+		
+		public String getInstructor()
+		{
+			return instructor;
+		}
+		
+		public void setInstructor(String instructor)
+		{
+			this.instructor = instructor;
+		}
 		public Date getCourseCreated() {
 			return courseCreated;
 		}

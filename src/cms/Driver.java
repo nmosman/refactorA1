@@ -107,6 +107,18 @@ public class Driver {
 				
 				else if(choice == 2)
 				{
+					System.out.println("Create a course:");
+					Teacher t = db.getTeacher(username);
+					
+					System.out.println("Enter in the course name: ");
+					String courseName = input.nextLine();
+					
+					System.out.println("Enter in the course id: ");
+					String courseId = input.nextLine();
+					
+					t.createCourse(courseId, courseName);
+					
+					System.out.println("You've created course:  " + courseName + " " + courseId + " !");
 					
 				}
 				
@@ -127,7 +139,6 @@ public class Driver {
 				
 				if(choice == 1)
 				{
-					System.out.println("Create a course:");
 					
 				}
 				else if(choice == 2)

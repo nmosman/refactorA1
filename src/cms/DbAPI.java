@@ -147,7 +147,16 @@ public class DbAPI {
 	}
 	public Teacher getTeacher(String username)
 	{
-		return null;
+		for (Teacher s : TeacherCache)
+		{
+			System.out.println(s.getUsername());
+			
+			if(s.getUsername().equals(username))
+			{
+				return s;
+			}
+		}
+	return null;
 		
 	}
 }
