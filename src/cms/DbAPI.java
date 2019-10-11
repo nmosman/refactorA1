@@ -61,7 +61,7 @@ public class DbAPI {
 	}
 	public boolean login(String username, String password)
 	{
-
+		
 		if(username.equals("admin") && password.equals("admin123")) {
 			return true;
 		}
@@ -118,19 +118,22 @@ public class DbAPI {
 	
 	public TeacherSchedule getTeacherSchedule(String username)
 	{
-		return null;
-		
-	}
-	
-	public Course getCourse(String courseId)
-	{
-		return null;
+		for (Teacher t : TeacherCache)
+		{
+			
+			
+			if(t.getUsername().equals(username))
+			{
+				return t.getSchedule();
+			}
+		}
+	return null;
 		
 	}
 	
 	public void addCourse(Course c)
 	{
-		
+		CourseCache.add(c);
 	}
 	
 	public Course findCourse(String courseId)

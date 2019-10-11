@@ -23,6 +23,10 @@ public class Teacher extends User {
 		this.username = username;
 	}
 	
+	public TeacherSchedule getSchedule()
+	{
+		return schedule;
+	}
 	
 	public String getUsername()
 	{

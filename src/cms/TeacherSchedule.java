@@ -16,6 +16,8 @@ public class TeacherSchedule {
 		}
 	}
 	
+	
+	
 	public TeacherSchedule(ArrayList<Course> courseList)
 	{
 		this.courseList = courseList;
