@@ -62,7 +62,9 @@ public class Driver {
 				{
 					System.out.println("Nice!");
 				}
-				while(choice!= 1 && choice !=2 && choice !=3 && choice !=4)
+				
+				boolean invalidInput = choice!= 1 && choice !=2 && choice !=3 && choice !=4;
+				while(invalidInput)
 				{
 			
 					System.out.println("Not valid choice, here's the menu again:\nStudent Course Menu:\n (1) View Schedule\n (2) Add course\n (3) Drop Course\n(4) Pay Fees");
@@ -131,7 +133,8 @@ public class Driver {
 				System.out.println("Admin Course Menu:\n (1) Create Course\n (2) Delete course\n");
 				choice = input.nextInt();
 				
-				while(choice!= 1 && choice !=2 && choice !=3 && choice !=4)
+				invalidInput = choice!= 1 && choice !=2 && choice !=3 && choice !=4;
+				while(invalidInput)
 				{
 					System.out.println("Not valid choice, here's the menu again:\nAdmin Course Menu:\n (1) Create Course\n (2) Delete course\n");
 					choice = input.nextInt();

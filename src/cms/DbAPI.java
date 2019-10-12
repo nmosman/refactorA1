@@ -59,26 +59,19 @@ public class DbAPI {
 		StudentCache.add(testStudent);
 		TeacherCache.add(testTeacher);
 	}
+	
+	private boolean isValidUser(String username, String password)
+	{
+		return username.equals("admin") && password.equals("admin123")
+				|| username.equals("teacher") && password.equals("teacher123")
+				|| username.equals("student") && password.equals("student123");
+	}
 	public boolean login(String username, String password)
 	{
 		
-		if(username.equals("admin") && password.equals("admin123")) {
-			return true;
-		}
+		// additional login information for when needed (like connecting to db)
 		
-		else if(username.equals("teacher") && password.equals("teacher123"))
-		{
-			return true;
-		}
-		else if (username.equals("student") && password.equals("student123"))
-		{
-			return true;
-		}
-		else
-		{
-			return false;
-		}
-				
+		return isValidUser(username, password);		
 	}
 	
 	public Permissions getPermissionType(String username)
