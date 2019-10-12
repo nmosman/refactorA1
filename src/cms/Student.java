@@ -1,9 +1,43 @@
 package cms;
 
-public class Student extends User{
+public class Student{
+	public String getStudentId() {
+		return studentId;
+	}
+
+	public void setStudentId(String studentId) {
+		this.studentId = studentId;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public String getUserType() {
+		return userType;
+	}
+
+	public void setUserType(String userType) {
+		this.userType = userType;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
 	private String name;
 	private String studentId;
 	private String username; 
+	private String address;
+	private String userType;
 	
 	private StudentSchedule schedule;
 	
@@ -51,23 +85,24 @@ public class Student extends User{
 	}
 	public float getTotalTuition()
 	{
+		//to be added in version 1.0
 		return 0;
 		
 	}
 	
 	public void printCourses()
 	{
-		
+		//to be added in version 1.0
 	}
 	
 	public void dropCourse()
 	{
-		
+		//to be added in version 1.0
 		
 	}
 	
 	public void payForCourse()
 	{
-		
+		//to be added in version 1.0
 	}
 }

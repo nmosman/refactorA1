@@ -54,4 +54,12 @@ public class CourseSession {
 	public void setNum_of_instructors(int num_of_instructors) {
 		this.num_of_instructors = num_of_instructors;
 	}
+
+	public ArrayList<Student> getStudentList() {
+		return studentList;
+	}
+
+	public void setStudentList(ArrayList<Student> studentList) {
+		this.studentList = studentList;
+	}
 }
