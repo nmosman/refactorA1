@@ -2,33 +2,18 @@ package cms;
 
 import java.util.ArrayList;
 
-public class StudentSchedule {
-	private ArrayList<Course> courseList = new ArrayList<Course>();
+public class StudentSchedule extends Schedule {
 	
-	public StudentSchedule()
-	{
-		
-	}
-	public void printSchedule()
-	{
-		for (Course c : courseList)
-		{
-			System.out.println(c.courseInfo());
-		}
-	}
+	public String studentScheduleYear;
+	public String createdDate;
 	
 	public StudentSchedule(ArrayList<Course> courseList)
 	{
-		this.courseList = courseList;
+		super( courseList);
 	}
 	
-	public ArrayList<Course>  getSchedule()
+	public StudentSchedule()
 	{
-		return courseList;
-	}
-	
-	public void addCourse(Course c)
-	{
-		courseList.add(c);
+		super();
 	}
 }
